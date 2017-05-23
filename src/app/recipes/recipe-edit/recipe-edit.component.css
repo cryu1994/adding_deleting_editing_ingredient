@@ -1,0 +1,4 @@
+input.ng-invalid.ng-touched,
+textrea.ng-invalid.ng-thouched{
+  border: 1px solid darkred;
+}

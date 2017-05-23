@@ -1,0 +1,17 @@
+<div class="row">
+  <div class="col-xs-10">
+    <app-shopping-edit></app-shopping-edit>
+    <hr>
+    <ul class="list-group">
+      <a
+        class="list-group-item"
+        style="cursor: pointer"
+        *ngFor="let ingredient of ingredients let i = index;"
+        (click) = "onEditItem(i)"
+      > <!-- added the click listeners to make it clickable, Ha! and then give it a name of onEditItem  -->
+        <!-- and  use let i = index to extract the id of the item. Cool, Eh? and then passed in to the click function as argument-->
+        {{ ingredient.name }} ({{ ingredient.amount }})
+      </a>
+    </ul>
+  </div>
+</div>
